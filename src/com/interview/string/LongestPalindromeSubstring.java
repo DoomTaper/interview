@@ -88,7 +88,7 @@ public class LongestPalindromeSubstring {
             if(end == T.length -1) {
                 break;
             }
-            //Mark newCenter to be either end or end + 1 depending on if we dealing with even or old number input.
+            //Mark newCenter to be either end or end + 1 depending on if we dealing with even or odd number input.
             int newCenter = end + (i%2 ==0 ? 1 : 0);
 
             for(int j = i + 1; j <= end; j++) {
